@@ -26,7 +26,7 @@ void MainWindow::on_pushButton_sum_clicked()
     int value_2 = text_2.toInt(&correct_2, 10);
 
     if(correct_1 && correct_2){
-        int sum = value_1 + value_2;
+        long long sum =( long long ) value_1 + value_2;
         QString result = QString::number(sum,10);
         ui->label_result_value->setText(result);
     }
